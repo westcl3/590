@@ -318,7 +318,7 @@
 // Add Map Data
 
 		
-			d3.json("readme-world.json", function(error, world) {
+			d3.json("https://github.com/westcl3/590/blob/master/readme-world.json", function(error, world) {
 				var countries = topojson.feature(world, world.objects.countries).features,
 				neighbors = topojson.neighbors(world.objects.countries.geometries);
 			
